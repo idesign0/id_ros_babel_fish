@@ -27,7 +27,7 @@ target_include_directories(${PROJECT_NAME} INTERFACE
 )
 target_link_libraries(${PROJECT_NAME} INTERFACE
   ros_babel_fish::ros_babel_fish
-  yaml-cpp
+  yaml-cpp::yaml-cpp
 )
 
 add_executable(echo src/echo.cpp)
